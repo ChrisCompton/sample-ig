@@ -1,0 +1,21 @@
+id: org.haib.fhir.domains
+canonical: http://hudsonalpha.github.io/fhir-ig
+name: DeveloperGuide
+status: draft
+version: 0.0.1
+fhirVersion: 4.0.1
+copyrightYear: 2020+
+releaseLabel: Development
+publisher:
+  name: HudsonAlpha Institute of Biotechnology
+  url: https://www.hudsonalpha.org
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+
+parameters:
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
