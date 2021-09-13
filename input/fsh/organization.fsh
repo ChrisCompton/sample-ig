@@ -1,7 +1,7 @@
-Profile: GenomeGatewayOrganization
+Profile: HudsonAlphaOrganization
 Parent: Organization
-Id: haib-genome-gateway-GenomeGatewayOrganization
-Title: "HudsonAlpha Genome Gateway Organization Profile"
+Id: haib-HudsonAlphaOrganization
+Title: "Organization (People)"
 Description: "Defines constraints and extensions on the Organization resource for the minimal set of data required for this resource."
 
 * active 0..1 MS
