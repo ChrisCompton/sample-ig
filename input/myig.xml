@@ -8,11 +8,11 @@
   <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
-  <name value="YourComputableMyIGNameHere"/>
-  <title value="Your User Friendly Name for MyIG Here"/>
+  <name value="HAIBGeneralFHIRProfile"/>
+  <title value="General Profile for HudsonAlpha Applications and Services"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 International - [Some] Work Group"/>
+  <publisher value="HudsonAlpha Software Engineering Team"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -20,7 +20,7 @@
       <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="A brief description of what MyIG is about (probably the same text as in your readme)"/>
+  <description value="This profile covers generalized implementation guidance for applications and services using FHIR."/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
@@ -46,7 +46,9 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <resource>
+    
+    
+    <!-- <resource>
       <reference>
         <reference value="StructureDefinition/mypatient"/>
       </reference>
@@ -69,13 +71,17 @@
         <reference value="Library/example-image"/>
       </reference>
       <description value="A test image example"/>
-    </resource>
+    </resource> -->
+
+
 <!--<resource>
 <reference>
 <reference value="MyLogicalModel/AS"/>
 </reference>
 </resource> -->
-    <resource>
+
+
+    <!-- <resource>
       <reference>
         <reference value="Patient/example"/>
       </reference>
@@ -116,7 +122,9 @@
         <reference value="ValueSet/valueset-no-codesystem"/>
       </reference>
       <name value="Value set for no code system"/>
-    </resource>
+    </resource> -->
+
+
 <!--    <resource>
       <reference>
         <reference value="Library/example"/>
@@ -124,8 +132,20 @@
       <name value="Simple library example"/>
       <description value="A simple example showing how library is pre-loaded"/>
     </resource> -->
-    <page>
-      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+
+
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="MyIG Home Page"/>
+        <generation value="html"/>
+      </page>
+
+    <!-- <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
@@ -154,7 +174,10 @@
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
-    </page>
+
+    </page> -->
+
+
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
